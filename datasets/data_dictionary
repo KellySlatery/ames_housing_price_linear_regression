@@ -1,0 +1,66 @@
+,variable,type,description,component columns
+0,zone_C (all),uint8,Dummy for 'MS Zoning',MS Zoning
+1,zone_FV,uint8,Dummy for 'MS Zoning',MS Zoning
+2,zone_I (all),uint8,Dummy for 'MS Zoning',MS Zoning
+3,zone_RH,uint8,Dummy for 'MS Zoning',MS Zoning
+4,zone_RL,uint8,Dummy for 'MS Zoning',MS Zoning
+5,zone_RM,uint8,Dummy for 'MS Zoning',MS Zoning
+6,lot_config_CulDSac,uint8,Dummy for 'Lot Config',Lot Config
+7,lot_config_FR2,uint8,Dummy for 'Lot Config',Lot Config
+8,lot_config_FR3,uint8,Dummy for 'Lot Config',Lot Config
+9,lot_config_Inside,uint8,Dummy for 'Lot Config',Lot Config
+10,neighborhood_Blueste,uint8,Dummy for 'Neighborhood',Neighborhood
+11,neighborhood_BrDale,uint8,Dummy for 'Neighborhood',Neighborhood
+12,neighborhood_BrkSide,uint8,Dummy for 'Neighborhood',Neighborhood
+13,neighborhood_ClearCr,uint8,Dummy for 'Neighborhood',Neighborhood
+14,neighborhood_CollgCr,uint8,Dummy for 'Neighborhood',Neighborhood
+15,neighborhood_Crawfor,uint8,Dummy for 'Neighborhood',Neighborhood
+16,neighborhood_Edwards,uint8,Dummy for 'Neighborhood',Neighborhood
+17,neighborhood_Gilbert,uint8,Dummy for 'Neighborhood',Neighborhood
+18,neighborhood_Greens,uint8,Dummy for 'Neighborhood',Neighborhood
+19,neighborhood_GrnHill,uint8,Dummy for 'Neighborhood',Neighborhood
+20,neighborhood_IDOTRR,uint8,Dummy for 'Neighborhood',Neighborhood
+21,neighborhood_Landmrk,uint8,Dummy for 'Neighborhood',Neighborhood
+22,neighborhood_MeadowV,uint8,Dummy for 'Neighborhood',Neighborhood
+23,neighborhood_Mitchel,uint8,Dummy for 'Neighborhood',Neighborhood
+24,neighborhood_NAmes,uint8,Dummy for 'Neighborhood',Neighborhood
+25,neighborhood_NPkVill,uint8,Dummy for 'Neighborhood',Neighborhood
+26,neighborhood_NWAmes,uint8,Dummy for 'Neighborhood',Neighborhood
+27,neighborhood_NoRidge,uint8,Dummy for 'Neighborhood',Neighborhood
+28,neighborhood_NridgHt,uint8,Dummy for 'Neighborhood',Neighborhood
+29,neighborhood_OldTown,uint8,Dummy for 'Neighborhood',Neighborhood
+30,neighborhood_SWISU,uint8,Dummy for 'Neighborhood',Neighborhood
+31,neighborhood_Sawyer,uint8,Dummy for 'Neighborhood',Neighborhood
+32,neighborhood_SawyerW,uint8,Dummy for 'Neighborhood',Neighborhood
+33,neighborhood_Somerst,uint8,Dummy for 'Neighborhood',Neighborhood
+34,neighborhood_StoneBr,uint8,Dummy for 'Neighborhood',Neighborhood
+35,neighborhood_Timber,uint8,Dummy for 'Neighborhood',Neighborhood
+36,neighborhood_Veenker,uint8,Dummy for 'Neighborhood',Neighborhood
+37,bldg_type_2fmCon,uint8,Dummy for 'Bldg Type',Bldg Type
+38,bldg_type_Duplex,uint8,Dummy for 'Bldg Type',Bldg Type
+39,bldg_type_Twnhs,uint8,Dummy for 'Bldg Type',Bldg Type
+40,bldg_type_TwnhsE,uint8,Dummy for 'Bldg Type',Bldg Type
+41,total_full_bath,int64,Added 'Full Bath' and 'Bsmt Full Bath',"'Full Bath', 'Bsmt Full Bath'"
+42,total_half_bath,int64,Added 'Half Bath' and 'Bsmt Half Bath',"'Half Bath', 'Bsmt Half Bath'"
+43,lot_size,float64,Interaction term,"'Lot Area', 'Lot Frontage'"
+44,year_built_remod/add,int64,Interaction term,"'Year Built', 'Year Remod/Add'"
+45,area_rms_abvgrd,int64,Interaction term,"'TotRmsAbvGrd', 'Gr Liv Area'"
+46,bathrooms,int64,Interaction term,"'Full Bath', 'Half Bath'"
+47,garage_size,float64,Interaction term,"'Garage Cars', 'Garage Area'"
+48,garage_cond_qual,int64,Interaction term,"'Garage Cond', 'Garage Qual'"
+49,has_condition,int64,"Made 'Condition1' and 'Condition2' binary, then added for [0,1,2]","'Condition1', 'Condition2'"
+50,bsmtfin_sf1_total_sf,float64,Interaction term,"'BsmtFin SF 1', 'Total Bsmt SF'"
+51,beds_baths,int64,Interaction term,"'total_full_bath', 'Bedroom AbvGr'"
+52,func_overall_qual,int64,Interaction term,"'Functional', 'Overall Qual'"
+53,lot_area_zone_C (all),int64,Interaction term,'Lot Area' and 'MS Zoning' dummies
+54,lot_area_zone_FV,int64,Interaction term,'Lot Area' and 'MS Zoning' dummies
+55,lot_area_zone_I (all),int64,Interaction term,'Lot Area' and 'MS Zoning' dummies
+56,lot_area_zone_RH,int64,Interaction term,'Lot Area' and 'MS Zoning' dummies
+57,lot_area_zone_RL,int64,Interaction term,'Lot Area' and 'MS Zoning' dummies
+58,lot_area_zone_RM,int64,Interaction term,'Lot Area' and 'MS Zoning' dummies
+59,house_style_bldg_type_2fmCon,float64,Interaction term,'House Style' and 'Bldg Type' dummies
+60,house_style_bldg_type_Duplex,float64,Interaction term,'House Style' and 'Bldg Type' dummies
+61,house_style_bldg_type_Twnhs,float64,Interaction term,'House Style' and 'Bldg Type' dummies
+62,house_style_bldg_type_TwnhsE,float64,Interaction term,'House Style' and 'Bldg Type' dummies
+63,SalePrice_preds,float64,Sale Price predictions from most accurate model,All features in final_features
+64,errors,float64,Actual sale prices - predicted sale prices (errors)'],"'SalePrice', 'SalePrice_preds'"
